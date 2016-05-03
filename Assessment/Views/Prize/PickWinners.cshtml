@@ -1,0 +1,13 @@
+﻿@model Assessment.ViewModels.PickWinnerViewModel
+@{
+    ViewBag.Title = "PickWinners";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>PickWinners</h2>
+<ol>
+    @foreach (var winner in Model.Winners)
+    {
+        <li>@winner.FullName</li>
+    }
+</ol>
